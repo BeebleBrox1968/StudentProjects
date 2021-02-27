@@ -1,8 +1,6 @@
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DataReader {
@@ -14,7 +12,7 @@ public class DataReader {
             e.printStackTrace();
         }
         //there is prob a better way to do this but its 1 am so sue me
-        ArrayList<Integer> ints = new ArrayList<Integer>();
+        ArrayList<Integer> ints = new ArrayList<>();
         while (scanner.hasNextInt()) {
             ints.add(scanner.nextInt());
         }

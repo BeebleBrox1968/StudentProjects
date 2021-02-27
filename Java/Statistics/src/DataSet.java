@@ -12,4 +12,13 @@ public class DataSet {
         }
         return total / (double)data.length;
     }
+    public double getStandardDeviation(){
+        double mean = getAverage();
+        double deviationSum = 0;
+        for (int datum : data) {
+            deviationSum += Math.pow((datum - mean), 2);
+        }
+        return Math.sqrt(deviationSum/(data.length-1));
+    }
+
 }
